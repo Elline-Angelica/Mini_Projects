@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class GraphicalUserInterface implements ActionListener {
+public class Login implements ActionListener {
 
     private static JLabel userLabel;
     private static JTextField userText;
@@ -41,7 +41,7 @@ public class GraphicalUserInterface implements ActionListener {
 
         button = new JButton("Login");
         button.setBounds(100,80,80,25);
-        button.addActionListener(new GraphicalUserInterface());
+        button.addActionListener(new Login());
         panel.add(button);
 
         success = new JLabel("");
